@@ -36,6 +36,9 @@
             this.PersonPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_DeleteWorker = new System.Windows.Forms.Button();
             this.btn_SearchWorker = new System.Windows.Forms.Button();
+            this.textBox_SearchBox = new System.Windows.Forms.TextBox();
+            this.btn_ClearSearch = new System.Windows.Forms.Button();
+            this.lbl_SearchByName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Persons)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +112,7 @@
             // 
             // btn_SearchWorker
             // 
-            this.btn_SearchWorker.Location = new System.Drawing.Point(186, 21);
+            this.btn_SearchWorker.Location = new System.Drawing.Point(267, 21);
             this.btn_SearchWorker.Name = "btn_SearchWorker";
             this.btn_SearchWorker.Size = new System.Drawing.Size(75, 23);
             this.btn_SearchWorker.TabIndex = 8;
@@ -117,11 +120,40 @@
             this.btn_SearchWorker.UseVisualStyleBackColor = true;
             this.btn_SearchWorker.Click += new System.EventHandler(this.btn_SearchWorker_Click);
             // 
+            // textBox_SearchBox
+            // 
+            this.textBox_SearchBox.Location = new System.Drawing.Point(348, 23);
+            this.textBox_SearchBox.Name = "textBox_SearchBox";
+            this.textBox_SearchBox.Size = new System.Drawing.Size(129, 20);
+            this.textBox_SearchBox.TabIndex = 9;
+            // 
+            // btn_ClearSearch
+            // 
+            this.btn_ClearSearch.Location = new System.Drawing.Point(186, 21);
+            this.btn_ClearSearch.Name = "btn_ClearSearch";
+            this.btn_ClearSearch.Size = new System.Drawing.Size(75, 23);
+            this.btn_ClearSearch.TabIndex = 10;
+            this.btn_ClearSearch.Text = "btn_ClearSearch";
+            this.btn_ClearSearch.UseVisualStyleBackColor = true;
+            this.btn_ClearSearch.Click += new System.EventHandler(this.btn_ClearSearch_Click);
+            // 
+            // lbl_SearchByName
+            // 
+            this.lbl_SearchByName.AutoSize = true;
+            this.lbl_SearchByName.Location = new System.Drawing.Point(345, 9);
+            this.lbl_SearchByName.Name = "lbl_SearchByName";
+            this.lbl_SearchByName.Size = new System.Drawing.Size(100, 13);
+            this.lbl_SearchByName.TabIndex = 11;
+            this.lbl_SearchByName.Text = "SearchByFirstName";
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 361);
+            this.Controls.Add(this.lbl_SearchByName);
+            this.Controls.Add(this.btn_ClearSearch);
+            this.Controls.Add(this.textBox_SearchBox);
             this.Controls.Add(this.btn_SearchWorker);
             this.Controls.Add(this.btn_DeleteWorker);
             this.Controls.Add(this.dataGridView_Persons);
@@ -131,6 +163,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Persons)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,6 +177,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PersonPosition;
         private System.Windows.Forms.Button btn_DeleteWorker;
         private System.Windows.Forms.Button btn_SearchWorker;
+        private System.Windows.Forms.TextBox textBox_SearchBox;
+        private System.Windows.Forms.Button btn_ClearSearch;
+        private System.Windows.Forms.Label lbl_SearchByName;
     }
 }
 

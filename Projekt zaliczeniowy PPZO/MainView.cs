@@ -20,6 +20,17 @@ namespace Projekt_zaliczeniowy_PPZO
            
         }
 
+        private void PrintList(Position item)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row.CreateCells(dataGridView_Persons);
+            row.Cells[0].Value = item.ID;
+            row.Cells[1].Value = item.FirstName;
+            row.Cells[2].Value = item.SecondName;
+            row.Cells[3].Value = item.PersonPosition;
+            dataGridView_Persons.Rows.Add(row);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -61,13 +72,7 @@ namespace Projekt_zaliczeniowy_PPZO
 
             foreach (Position pos in personList)
             {
-                DataGridViewRow row = new DataGridViewRow();
-                row.CreateCells(dataGridView_Persons);
-                row.Cells[0].Value = pos.ID;
-                row.Cells[1].Value = pos.FirstName;
-                row.Cells[2].Value = pos.SecondName;
-                row.Cells[3].Value = pos.PersonPosition;
-                dataGridView_Persons.Rows.Add(row);
+                PrintList(pos);
             }
         }
 
@@ -89,17 +94,21 @@ namespace Projekt_zaliczeniowy_PPZO
 
         private void btn_SearchWorker_Click(object sender, EventArgs e)
         {
-            SearchForm searchForm = new SearchForm();
-            searchForm.Owner = this;
-            try
+            dataGridView_Persons.Rows.Clear();
+            List<Position> found = personList.FindAll(x => x.FirstName == textBox_SearchBox.Text);
+            foreach (Position f in found)
             {
-                searchForm.ShowDialog();
+                PrintList(f);
             }
-            finally
-            {
-                searchForm.Dispose();
 
-            }
+
+
+            
+        }
+
+        private void btn_ClearSearch_Click(object sender, EventArgs e)
+        {
+            RefreshWorkers();
         }
     }
 }
