@@ -8,7 +8,7 @@ namespace Projekt_zaliczeniowy_PPZO
 {
     public class Position : Person
     {
-        protected int orginaPersonId { get; set; }
+       
 
         public string PersonPosition { get; set; }
 
@@ -24,10 +24,7 @@ namespace Projekt_zaliczeniowy_PPZO
             this.SecondName = secondName;
             this.PersonPosition = personPosition;
         }
-        public string ReturnPersonPosition()
-        {
-            return this.PersonPosition;
-        }
+       
 
 
 
