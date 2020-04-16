@@ -30,7 +30,7 @@ namespace Projekt_zaliczeniowy_PPZO
             try
             {
 
-                var item = mainViewForm.personList.SingleOrDefault(x => x.ReturnId() == int.Parse(textBox_WorkerId.Text));
+                var item = mainViewForm.personList.SingleOrDefault(x => x.ID == int.Parse(textBox_WorkerId.Text));
                 if (item != null)
                 {
                     mainViewForm.personList.Remove(item);
@@ -40,7 +40,7 @@ namespace Projekt_zaliczeniowy_PPZO
             {
                 MessageBox.Show(ex.ToString());
             }
-            //MessageBox.Show(pos.ReturnFirstName() + " " + pos.ReturnSecondName() + " " + pos.ReturnPersonPosition());
+            
             this.Close();
         }
     }

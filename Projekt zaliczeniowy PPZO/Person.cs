@@ -12,9 +12,9 @@ namespace Projekt_zaliczeniowy_PPZO
 
         private static int currentId;
 
-         protected int ID { get; set; }
-         protected string FirstName { get; set; }
-         protected string SecondName { get; set; }
+         public int ID { get; set; }
+         public string FirstName { get; set; }
+         public string SecondName { get; set; }
 
         public Person()
         {
@@ -32,27 +32,7 @@ namespace Projekt_zaliczeniowy_PPZO
         static Person() => currentId = 0;
         protected int GetNextId() => ++currentId;
 
-        public void Update(string firstName, string secondName)
-        {
-            this.FirstName = firstName;
-            this.SecondName = secondName;
-        }
-      public string ReturnFirstName()
-        {
-            return this.FirstName;
-       }
-        public string ReturnSecondName()
-        {
-            return this.SecondName;
-        }
-        public int ReturnId()
-        {
-            return this.ID;
-        }
-        public void SetId(int id)
-        {
-            this.ID = id;
-        }
+  
 
 
     }

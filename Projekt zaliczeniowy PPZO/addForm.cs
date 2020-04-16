@@ -22,7 +22,7 @@ namespace Projekt_zaliczeniowy_PPZO
             var mainViewForm = (MainView)this.Owner;
             Position pos = new Position(txtBox_FirstName.Text, txtBox_SecondName.Text, txtBox_PersonPosition.Text);
             mainViewForm.personList.Add(pos);
-            //MessageBox.Show(pos.ReturnFirstName() + " " + pos.ReturnSecondName() + " " + pos.ReturnPersonPosition());
+            
             this.Close();
         }
     }

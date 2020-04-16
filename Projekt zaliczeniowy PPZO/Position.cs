@@ -10,7 +10,7 @@ namespace Projekt_zaliczeniowy_PPZO
     {
         protected int orginaPersonId { get; set; }
 
-        protected string PersonPosition { get; set; }
+        public string PersonPosition { get; set; }
 
         public Position()
         {

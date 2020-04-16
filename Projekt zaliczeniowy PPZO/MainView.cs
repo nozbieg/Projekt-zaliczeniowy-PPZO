@@ -63,10 +63,10 @@ namespace Projekt_zaliczeniowy_PPZO
             {
                 DataGridViewRow row = new DataGridViewRow();
                 row.CreateCells(dataGridView_Persons);
-                row.Cells[0].Value = pos.ReturnId();
-                row.Cells[1].Value = pos.ReturnFirstName();
-                row.Cells[2].Value = pos.ReturnSecondName();
-                row.Cells[3].Value = pos.ReturnPersonPosition();
+                row.Cells[0].Value = pos.ID;
+                row.Cells[1].Value = pos.FirstName;
+                row.Cells[2].Value = pos.SecondName;
+                row.Cells[3].Value = pos.PersonPosition;
                 dataGridView_Persons.Rows.Add(row);
             }
         }
