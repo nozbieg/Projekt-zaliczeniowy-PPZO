@@ -12,7 +12,7 @@ namespace Projekt_zaliczeniowy_PPZO
 {
     public partial class MainView : Form
     {
-        public List<Position> personList = new List<Position>();
+        public List<Employee> personList = new List<Employee>();
 
         public MainView()
         {
@@ -20,14 +20,15 @@ namespace Projekt_zaliczeniowy_PPZO
            
         }
 
-        private void PrintList(Position item)
+        private void PrintList(Employee item)
         {
             DataGridViewRow row = new DataGridViewRow();
             row.CreateCells(dataGridView_Persons);
             row.Cells[0].Value = item.ID;
             row.Cells[1].Value = item.FirstName;
             row.Cells[2].Value = item.SecondName;
-            row.Cells[3].Value = item.PersonPosition;
+            row.Cells[3].Value = item.Age;
+            row.Cells[4].Value = item.Salary;
             dataGridView_Persons.Rows.Add(row);
         }
 
@@ -70,7 +71,7 @@ namespace Projekt_zaliczeniowy_PPZO
         {
             dataGridView_Persons.Rows.Clear();
 
-            foreach (Position pos in personList)
+            foreach (Employee pos in personList)
             {
                 PrintList(pos);
             }
@@ -95,8 +96,8 @@ namespace Projekt_zaliczeniowy_PPZO
         private void btn_SearchWorker_Click(object sender, EventArgs e)
         {
             dataGridView_Persons.Rows.Clear();
-            List<Position> found = personList.FindAll(x => x.FirstName == textBox_SearchBox.Text);
-            foreach (Position f in found)
+            List<Employee> found = personList.FindAll(x => x.FirstName == textBox_SearchBox.Text);
+            foreach (Employee f in found)
             {
                 PrintList(f);
             }
@@ -108,6 +109,22 @@ namespace Projekt_zaliczeniowy_PPZO
 
         private void btn_ClearSearch_Click(object sender, EventArgs e)
         {
+            RefreshWorkers();
+        }
+
+        private void btn_GiveBonus_Click(object sender, EventArgs e)
+        {
+            BonusForm bonusForm = new BonusForm();
+            bonusForm.Owner = this;
+            try
+            {
+                bonusForm.ShowDialog();
+            }
+            finally
+            {
+                bonusForm.Dispose();
+
+            }
             RefreshWorkers();
         }
     }

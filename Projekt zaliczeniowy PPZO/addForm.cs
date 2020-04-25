@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt_zaliczeniowy_PPZO.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,14 +17,53 @@ namespace Projekt_zaliczeniowy_PPZO
         {
             InitializeComponent();
         }
-
+        
         private void btn_addWorker_Click(object sender, EventArgs e)
         {
             var mainViewForm = (MainView)this.Owner;
-            Position pos = new Position(txtBox_FirstName.Text, txtBox_SecondName.Text, txtBox_PersonPosition.Text);
-            mainViewForm.personList.Add(pos);
+            try
+            {
+                if (rBtn_Manager.Checked == true || rBtn_SalesPerson.Checked == true)
+                {
+                    if (rBtn_Manager.Checked == true)
+                    {
+                        Manager menago = new Manager(txtBox_FirstName.Text, txtBox_SecondName.Text, int.Parse(txtBox_Age.Text), int.Parse(textBox_Salary.Text), 0);
+                        mainViewForm.personList.Add(menago);
+                        this.Close();
+                    }
+                    if (rBtn_SalesPerson.Checked == true)
+                    {
+                        SalesPerson seller = new SalesPerson(txtBox_FirstName.Text, txtBox_SecondName.Text, int.Parse(txtBox_Age.Text), int.Parse(textBox_Salary.Text), 0);
+                        mainViewForm.personList.Add(seller);
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Chose option");
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             
-            this.Close();
+            
+            
+        }
+
+        private void addForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void personPosition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
