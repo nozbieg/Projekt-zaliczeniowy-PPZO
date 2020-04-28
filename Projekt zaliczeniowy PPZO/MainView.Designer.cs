@@ -30,17 +30,18 @@
         {
             this.btn_addWorker = new System.Windows.Forms.Button();
             this.dataGridView_Persons = new System.Windows.Forms.DataGridView();
-            this.btn_DeleteWorker = new System.Windows.Forms.Button();
-            this.btn_SearchWorker = new System.Windows.Forms.Button();
-            this.textBox_SearchBox = new System.Windows.Forms.TextBox();
-            this.btn_ClearSearch = new System.Windows.Forms.Button();
-            this.lbl_SearchByName = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SecondName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_DeleteWorker = new System.Windows.Forms.Button();
+            this.btn_SearchWorker = new System.Windows.Forms.Button();
+            this.textBox_SearchBox = new System.Windows.Forms.TextBox();
+            this.btn_ClearSearch = new System.Windows.Forms.Button();
+            this.lbl_SearchByName = new System.Windows.Forms.Label();
             this.btn_GiveBonus = new System.Windows.Forms.Button();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Persons)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,12 +69,49 @@
             this.FirstName,
             this.SecondName,
             this.Age,
-            this.Salary});
+            this.Salary,
+            this.Position});
             this.dataGridView_Persons.Location = new System.Drawing.Point(24, 62);
             this.dataGridView_Persons.Name = "dataGridView_Persons";
             this.dataGridView_Persons.ReadOnly = true;
             this.dataGridView_Persons.Size = new System.Drawing.Size(453, 257);
             this.dataGridView_Persons.TabIndex = 6;
+            this.dataGridView_Persons.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Persons_CellContentClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 41;
+            // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "FirstName";
+            this.FirstName.Name = "FirstName";
+            this.FirstName.ReadOnly = true;
+            this.FirstName.Width = 79;
+            // 
+            // SecondName
+            // 
+            this.SecondName.HeaderText = "SecondName";
+            this.SecondName.Name = "SecondName";
+            this.SecondName.ReadOnly = true;
+            this.SecondName.Width = 97;
+            // 
+            // Age
+            // 
+            this.Age.HeaderText = "Age";
+            this.Age.Name = "Age";
+            this.Age.ReadOnly = true;
+            this.Age.Width = 51;
+            // 
+            // Salary
+            // 
+            this.Salary.HeaderText = "Salary";
+            this.Salary.Name = "Salary";
+            this.Salary.ReadOnly = true;
+            this.Salary.Width = 61;
             // 
             // btn_DeleteWorker
             // 
@@ -121,41 +159,6 @@
             this.lbl_SearchByName.TabIndex = 11;
             this.lbl_SearchByName.Text = "SearchByFirstName";
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 41;
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "FirstName";
-            this.FirstName.Name = "FirstName";
-            this.FirstName.ReadOnly = true;
-            this.FirstName.Width = 79;
-            // 
-            // SecondName
-            // 
-            this.SecondName.HeaderText = "SecondName";
-            this.SecondName.Name = "SecondName";
-            this.SecondName.ReadOnly = true;
-            this.SecondName.Width = 97;
-            // 
-            // Age
-            // 
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
-            this.Age.ReadOnly = true;
-            this.Age.Width = 51;
-            // 
-            // Salary
-            // 
-            this.Salary.HeaderText = "Salary";
-            this.Salary.Name = "Salary";
-            this.Salary.ReadOnly = true;
-            this.Salary.Width = 61;
-            // 
             // btn_GiveBonus
             // 
             this.btn_GiveBonus.Location = new System.Drawing.Point(382, 326);
@@ -165,6 +168,13 @@
             this.btn_GiveBonus.Text = "btn_GiveBonus";
             this.btn_GiveBonus.UseVisualStyleBackColor = true;
             this.btn_GiveBonus.Click += new System.EventHandler(this.btn_GiveBonus_Click);
+            // 
+            // Position
+            // 
+            this.Position.HeaderText = "Position";
+            this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
+            this.Position.Width = 69;
             // 
             // MainView
             // 
@@ -203,6 +213,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
         private System.Windows.Forms.Button btn_GiveBonus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Position;
     }
 }
 

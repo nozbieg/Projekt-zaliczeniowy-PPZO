@@ -13,6 +13,7 @@ namespace Projekt_zaliczeniowy_PPZO
 {
     public partial class addForm : Form
     {
+        //Formularz dodawania nowego obiektu klasy Manager lub SalesPerson. Stworzony obiekt dodaje do listy PersonList klasy Employee
         public addForm()
         {
             InitializeComponent();
@@ -20,9 +21,11 @@ namespace Projekt_zaliczeniowy_PPZO
         
         private void btn_addWorker_Click(object sender, EventArgs e)
         {
+            
             var mainViewForm = (MainView)this.Owner;
             try
             {
+                //sprawdzam zaznaczony checkbox (wybraną klasę)
                 if (rBtn_Manager.Checked == true || rBtn_SalesPerson.Checked == true)
                 {
                     if (rBtn_Manager.Checked == true)

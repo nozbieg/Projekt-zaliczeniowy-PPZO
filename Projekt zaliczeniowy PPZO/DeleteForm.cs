@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace Projekt_zaliczeniowy_PPZO
 {
+    //Formularz kasowania obiektu z listy
     public partial class DeleteForm : Form
     {
-        public bool errorFlag = false;
+        
         public DeleteForm()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace Projekt_zaliczeniowy_PPZO
             var mainViewForm = (MainView)this.Owner;
             try
             {
-
+                //kasuje element o podanym id z listy
                 var item = mainViewForm.personList.SingleOrDefault(x => x.ID == int.Parse(textBox_WorkerId.Text));
                 if (item != null)
                 {

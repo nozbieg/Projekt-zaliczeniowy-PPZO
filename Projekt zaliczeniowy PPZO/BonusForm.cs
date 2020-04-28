@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Projekt_zaliczeniowy_PPZO
 {
+    //Formularz dodawania bonusu pracownikowi
     public partial class BonusForm : Form
     {
         public BonusForm()
@@ -19,13 +20,15 @@ namespace Projekt_zaliczeniowy_PPZO
 
         private void btv_Bonus_Click(object sender, EventArgs e)
         {
+
             var mainViewForm = (MainView)this.Owner;
             try
             {
-
+                //pobieram id pracownika
                 var item = mainViewForm.personList.SingleOrDefault(x => x.ID == int.Parse(txtBox_EmployeeID.Text));
-                if (item != null)
+                if (item != null) //jezeli id istnieje
                 {
+                    //daje bonus uzywając metody GiveBonus (zadeklarowanej w klasach Employee oraz Manager i SalesPerson z innym działaniem
                     item.GiveBonus(int.Parse(txtBox_Bonus.Text));
                 }
             }
