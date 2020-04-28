@@ -73,7 +73,7 @@
             this.btv_Bonus.Name = "btv_Bonus";
             this.btv_Bonus.Size = new System.Drawing.Size(170, 23);
             this.btv_Bonus.TabIndex = 4;
-            this.btv_Bonus.Text = "btn_Bonus";
+            this.btv_Bonus.Text = "GiveBonus";
             this.btv_Bonus.UseVisualStyleBackColor = true;
             this.btv_Bonus.Click += new System.EventHandler(this.btv_Bonus_Click);
             // 
@@ -88,7 +88,7 @@
             this.Controls.Add(this.lbl_Bonus);
             this.Controls.Add(this.lbl_EmployeeID);
             this.Name = "BonusForm";
-            this.Text = "BonusForm";
+            this.Text = "Give bonus";
             this.ResumeLayout(false);
             this.PerformLayout();
 

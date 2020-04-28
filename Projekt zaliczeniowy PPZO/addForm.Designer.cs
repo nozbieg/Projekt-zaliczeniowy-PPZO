@@ -38,8 +38,8 @@
             this.textBox_Salary = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rBtn_Manager = new System.Windows.Forms.RadioButton();
             this.rBtn_SalesPerson = new System.Windows.Forms.RadioButton();
+            this.rBtn_Manager = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             this.btn_addWorker.Name = "btn_addWorker";
             this.btn_addWorker.Size = new System.Drawing.Size(100, 23);
             this.btn_addWorker.TabIndex = 0;
-            this.btn_addWorker.Text = "btn_addWorker";
+            this.btn_addWorker.Text = "AddEmploye";
             this.btn_addWorker.UseVisualStyleBackColor = true;
             this.btn_addWorker.Click += new System.EventHandler(this.btn_addWorker_Click);
             // 
@@ -129,17 +129,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // rBtn_Manager
-            // 
-            this.rBtn_Manager.AutoSize = true;
-            this.rBtn_Manager.Location = new System.Drawing.Point(7, 9);
-            this.rBtn_Manager.Name = "rBtn_Manager";
-            this.rBtn_Manager.Size = new System.Drawing.Size(67, 17);
-            this.rBtn_Manager.TabIndex = 0;
-            this.rBtn_Manager.TabStop = true;
-            this.rBtn_Manager.Text = "Manager";
-            this.rBtn_Manager.UseVisualStyleBackColor = true;
-            // 
             // rBtn_SalesPerson
             // 
             this.rBtn_SalesPerson.AutoSize = true;
@@ -150,6 +139,17 @@
             this.rBtn_SalesPerson.TabStop = true;
             this.rBtn_SalesPerson.Text = "Sales Person";
             this.rBtn_SalesPerson.UseVisualStyleBackColor = true;
+            // 
+            // rBtn_Manager
+            // 
+            this.rBtn_Manager.AutoSize = true;
+            this.rBtn_Manager.Location = new System.Drawing.Point(7, 9);
+            this.rBtn_Manager.Name = "rBtn_Manager";
+            this.rBtn_Manager.Size = new System.Drawing.Size(67, 17);
+            this.rBtn_Manager.TabIndex = 0;
+            this.rBtn_Manager.TabStop = true;
+            this.rBtn_Manager.Text = "Manager";
+            this.rBtn_Manager.UseVisualStyleBackColor = true;
             // 
             // addForm
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.txtBox_FirstName);
             this.Controls.Add(this.btn_addWorker);
             this.Name = "addForm";
-            this.Text = "addForm";
+            this.Text = "add Employee";
             this.Load += new System.EventHandler(this.addForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -39,7 +39,7 @@
             this.btn_DeleteWorker.Name = "btn_DeleteWorker";
             this.btn_DeleteWorker.Size = new System.Drawing.Size(226, 23);
             this.btn_DeleteWorker.TabIndex = 0;
-            this.btn_DeleteWorker.Text = "btn_DeleteWorker";
+            this.btn_DeleteWorker.Text = "DeleteEmploye";
             this.btn_DeleteWorker.UseVisualStyleBackColor = true;
             this.btn_DeleteWorker.Click += new System.EventHandler(this.btn_DeleteWorker_Click);
             // 
@@ -68,7 +68,7 @@
             this.Controls.Add(this.textBox_WorkerId);
             this.Controls.Add(this.btn_DeleteWorker);
             this.Name = "DeleteForm";
-            this.Text = "DeleteForm";
+            this.Text = "Delete employee";
             this.Load += new System.EventHandler(this.DeleteForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

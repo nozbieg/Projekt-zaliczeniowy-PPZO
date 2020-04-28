@@ -51,7 +51,7 @@
             this.btn_addWorker.Name = "btn_addWorker";
             this.btn_addWorker.Size = new System.Drawing.Size(75, 23);
             this.btn_addWorker.TabIndex = 3;
-            this.btn_addWorker.Text = "btn_AddWorker";
+            this.btn_addWorker.Text = "Add Employee";
             this.btn_addWorker.UseVisualStyleBackColor = true;
             this.btn_addWorker.Click += new System.EventHandler(this.btn_addWorker_Click);
             // 
@@ -119,7 +119,7 @@
             this.btn_DeleteWorker.Name = "btn_DeleteWorker";
             this.btn_DeleteWorker.Size = new System.Drawing.Size(75, 23);
             this.btn_DeleteWorker.TabIndex = 7;
-            this.btn_DeleteWorker.Text = "btn_DeleteWorker";
+            this.btn_DeleteWorker.Text = "Delete Employee";
             this.btn_DeleteWorker.UseVisualStyleBackColor = true;
             this.btn_DeleteWorker.Click += new System.EventHandler(this.btn_DeleteWorker_Click);
             // 
@@ -129,7 +129,7 @@
             this.btn_SearchWorker.Name = "btn_SearchWorker";
             this.btn_SearchWorker.Size = new System.Drawing.Size(75, 23);
             this.btn_SearchWorker.TabIndex = 8;
-            this.btn_SearchWorker.Text = "btn_SearchWorker";
+            this.btn_SearchWorker.Text = "Search";
             this.btn_SearchWorker.UseVisualStyleBackColor = true;
             this.btn_SearchWorker.Click += new System.EventHandler(this.btn_SearchWorker_Click);
             // 
@@ -146,7 +146,7 @@
             this.btn_ClearSearch.Name = "btn_ClearSearch";
             this.btn_ClearSearch.Size = new System.Drawing.Size(75, 23);
             this.btn_ClearSearch.TabIndex = 10;
-            this.btn_ClearSearch.Text = "btn_ClearSearch";
+            this.btn_ClearSearch.Text = "ClearSearch";
             this.btn_ClearSearch.UseVisualStyleBackColor = true;
             this.btn_ClearSearch.Click += new System.EventHandler(this.btn_ClearSearch_Click);
             // 
@@ -155,9 +155,9 @@
             this.lbl_SearchByName.AutoSize = true;
             this.lbl_SearchByName.Location = new System.Drawing.Point(345, 9);
             this.lbl_SearchByName.Name = "lbl_SearchByName";
-            this.lbl_SearchByName.Size = new System.Drawing.Size(100, 13);
+            this.lbl_SearchByName.Size = new System.Drawing.Size(67, 13);
             this.lbl_SearchByName.TabIndex = 11;
-            this.lbl_SearchByName.Text = "SearchByFirstName";
+            this.lbl_SearchByName.Text = "Search input";
             // 
             // btn_GiveBonus
             // 
@@ -165,7 +165,7 @@
             this.btn_GiveBonus.Name = "btn_GiveBonus";
             this.btn_GiveBonus.Size = new System.Drawing.Size(95, 23);
             this.btn_GiveBonus.TabIndex = 12;
-            this.btn_GiveBonus.Text = "btn_GiveBonus";
+            this.btn_GiveBonus.Text = "Give Bonus";
             this.btn_GiveBonus.UseVisualStyleBackColor = true;
             this.btn_GiveBonus.Click += new System.EventHandler(this.btn_GiveBonus_Click);
             // 
@@ -190,7 +190,7 @@
             this.Controls.Add(this.dataGridView_Persons);
             this.Controls.Add(this.btn_addWorker);
             this.Name = "MainView";
-            this.Text = "Worker database";
+            this.Text = "Employee";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Persons)).EndInit();
             this.ResumeLayout(false);
