@@ -21,7 +21,7 @@ namespace Projekt_zaliczeniowy_PPZO
             InitializeComponent();
            
         }
-        //Metoda print list ładująca elementy z listy do widoku DataGrid
+        //Metoda print list ładująca element z listy do widoku DataGrid
         private void PrintList(Employee item)
         {
             DataGridViewRow row = new DataGridViewRow();
@@ -33,6 +33,7 @@ namespace Projekt_zaliczeniowy_PPZO
             row.Cells[4].Value = item.Salary;
             row.Cells[5].Value = item.Position;
             dataGridView_Persons.Rows.Add(row);
+            //com
         }
 
         private void Form1_Load(object sender, EventArgs e)
