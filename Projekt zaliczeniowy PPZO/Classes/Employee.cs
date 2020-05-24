@@ -19,7 +19,7 @@ namespace Projekt_zaliczeniowy_PPZO
          public string SecondName { get; set; } //nazwisko
          public int Age { get; set; } //wiek
          public double Salary { get; set; } //wypłata
-        public string Position { get; set; } //stanowisko
+         public string Position { get; set; } //stanowisko
 
         //Konstruktor domyślny
         public Employee()
