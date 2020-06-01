@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//SYSTEM DO OBSŁUGI KADRY PRZEDSIĘBIORSTWA
+//SYSTEM DO OBSŁUGI KADRY MIKROPRZEDSIEBIORSTWA
 namespace Projekt_zaliczeniowy_PPZO
 {
     //metody głównego formularza
