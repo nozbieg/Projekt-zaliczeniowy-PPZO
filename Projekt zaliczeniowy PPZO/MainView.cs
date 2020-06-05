@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //SYSTEM DO OBSŁUGI KADRY MIKROPRZEDSIEBIORSTWA
+//Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
 namespace Projekt_zaliczeniowy_PPZO
 {
     //metody głównego formularza

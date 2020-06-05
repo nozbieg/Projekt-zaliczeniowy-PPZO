@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
 namespace Projekt_zaliczeniowy_PPZO
 {
     public partial class addForm : Form

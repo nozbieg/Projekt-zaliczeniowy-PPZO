@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Projekt_zaliczeniowy_PPZO
 {
+    //Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
     //Klasa Manager dziedzicząca
     public class Manager : Employee
     {
         //pole Stock - Tylko dla Managera - ilości dostępnych marketów*       
         public int StockOptions {get; set;}
         //Konstruktor przeciążony
-        public Manager(string imie, string nazwisko, int age, double salary, int stock)
+        public Manager(string imie, string nazwisko, int age, double salary, int stock) 
         {
+            
             this.ID = GetNextId();
             this.FirstName = imie;
             this.SecondName = nazwisko;

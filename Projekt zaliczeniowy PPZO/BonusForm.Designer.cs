@@ -89,6 +89,7 @@
             this.Controls.Add(this.lbl_EmployeeID);
             this.Name = "BonusForm";
             this.Text = "Give bonus";
+            this.Load += new System.EventHandler(this.BonusForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

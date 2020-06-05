@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Projekt_zaliczeniowy_PPZO.Classes
 {
+    //Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
     //Klasa Sales Person definiująca sprzedawców
     class SalesPerson : Employee
     {
         //pole oznaczające ilość tranzakcji sprzedawcy
-        public int SalesNumber {get; set;}
+        public int SalesNumber { get; set; }
+
 
         //Konstruktor domyslny
         public SalesPerson()
@@ -52,4 +54,5 @@ namespace Projekt_zaliczeniowy_PPZO.Classes
             
         }
     }
+
 }

@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Projekt_zaliczeniowy_PPZO
-{
+{   
+    //Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
     // Głowna klasa abstrakcyjna (istnieje ale nie można stworzyć obiektu tej klasy, służy tylko do dziedziczenia po niej) Employee ( Pracownicy )
     public abstract class Employee
     {

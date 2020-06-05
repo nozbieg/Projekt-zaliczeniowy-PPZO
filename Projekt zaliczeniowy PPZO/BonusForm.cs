@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Autor: Norbert Olesiak-Zbieg, GL01, Informatyka 2 semestr - zaocznie
 namespace Projekt_zaliczeniowy_PPZO
 {
     //Formularz dodawania bonusu pracownikowi
@@ -38,6 +38,11 @@ namespace Projekt_zaliczeniowy_PPZO
             }
 
             this.Close();
+        }
+
+        private void BonusForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
